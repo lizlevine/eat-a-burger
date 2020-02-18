@@ -1,4 +1,5 @@
-// create referrence to express and express router
+// create referrence to express and express router- this file will hold all the routes in app - 
+// router.get, router.put, router.post go here
 
 var express = require('express');
 var router = express.Router();
@@ -27,5 +28,7 @@ router.post('/burgers/create',function(req,res){
         res.redirect('/');
     })
 })
+
+// might need a router.delete ?
 
 module.exports = router;

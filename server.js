@@ -1,20 +1,17 @@
-// ==============================================================================
-// DEPENDENCIES
+// DEPENDENCIES / requires
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
-// set-up for node server....
+// this file creates express connection & runs node server
 
 var express = require("express");
 var bodyParser = require("body-parser");
 var exphbs = require("express-handlebars");
-// var mysql = require("mysql");
 
 // ==============================================================================
 // EXPRESS CONFIGURATION
 // This sets up the basic properties for our express server
 // ==============================================================================
 
-// Tells node that we are creating an "express" server
 var app = express();
 
 app.use(express.static(__dirname + "/public"));
