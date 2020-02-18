@@ -1,0 +1,27 @@
+body {
+  background-image: url("../img/mixed-burgers.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.jumbotron {
+  background-color: gold;
+  color: orangered;
+  margin-top: 90px;
+}
+
+button {
+  background-color: orangered;
+}
+
+img {
+  height: 180px;
+  width: 250px;
+  margin: 40px;
+}
+
+h4 {
+  text-align: center;
+  margin-top: 40px;
+}
