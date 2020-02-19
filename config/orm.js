@@ -29,15 +29,14 @@ var orm = {
       }
     );
   },
-// below example of using template string format instead
+  // below example of using template string format instead
   create: function(tableInput, val, cb) {
-    connection.query(
-      `INSERT INTO ${tableInput} (burger_name), VALUES ${val};`,
-      function(err, result) {
-        if (err) throw err;
-        cb(result);
-      }
-    );
+    let q = `INSERT INTO ${tableInput}(burger_name) VALUES ('${val}');`;
+    console.log(q);
+    connection.query(q, function(err, result) {
+      if (err) throw err;
+      cb(result);
+    });
   }
 };
 module.exports = orm;

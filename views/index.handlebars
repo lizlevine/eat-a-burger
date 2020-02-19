@@ -14,14 +14,14 @@
                             <h2 class="input-item subtitle">Order your dream burger at the window, and hit "submit"!
                             </h2>
 
-                            <form class="create-form input-item">
-                                <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
-                                    <div class="form-group">
-                                        <label for="ca"></label>
-                                        <input type="text" id="ca" name="burger_name">
-                                    </div>
-                                    <button class="submit-button" type="submit">Submit!</button>
-                                </form>
+                            {{!-- <form class="create-form input-item"> --}}
+                            <form action="/burgers/create" method="POST" class="button-size">
+                                <div class="form-group">
+                                    <label for="ca"></label>
+                                    <input type="text" id="ca" name="burger_name">
+                                </div>
+                                <button class="submit-button" type="submit">Submit!</button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,8 @@
                             <ul>
                                 {{#each burger_data}}
                                 {{#unless this.devoured}}
-                                <input type="" name="burger_id" type="text" value={{this.id}}>
+                                <input type="" name="burger_name" type="text" value={{this.burger_name}}>
+                                {{!-- <pre>{{this.burger_name}}</pre> --}}
                                 {{/unless}}
                                 {{/each}}
                             </ul>
