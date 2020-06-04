@@ -7,6 +7,8 @@ var burger = require("../models/burger.js");
 
 // setup base route & render to index.hb in views folder
 
+// get route -> index
+
 router.get("/", function(req, res) {
   burger.all(function(burger_data) {
     console.log(burger_data);
@@ -27,7 +29,5 @@ router.post("/burgers/create", function(req, res) {
     res.redirect("/");
   });
 });
-
-// might need a router.delete ?
 
 module.exports = router;
