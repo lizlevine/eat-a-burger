@@ -9,7 +9,10 @@ body {
   background-color: gold;
   color: orangered;
   margin-top: 100px;
-  opacity: 0.95;
+  /* opacity: 0.95; */
+  /* box-shadow: inset 0 0 10px lightgray; */
+  /* box-shadow: 0 8px 6px -6px black; */
+  box-shadow: inset -3px -3px 10px darkslateblue;
 }
 
 button {
@@ -42,7 +45,7 @@ footer {
   font-family: "Permanent Marker", cursive;
   text-align: center;
   padding: 30px;
-  opacity: 0.9;
+  opacity: 0.96;
 }
 
 #footer-text {
