@@ -9,7 +9,7 @@ body {
   background-color: gold;
   color: orangered;
   margin-top: 100px;
-  margin-bottom: 100px;
+  opacity: 0.95;
 }
 
 button {
@@ -42,6 +42,7 @@ footer {
   font-family: "Permanent Marker", cursive;
   text-align: center;
   padding: 30px;
+  opacity: 0.9;
 }
 
 #footer-text {
