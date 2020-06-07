@@ -10,9 +10,9 @@ body {
   color: orangered;
   margin-top: 100px;
   /* opacity: 0.95; */
-  /* box-shadow: inset 0 0 10px lightgray; */
+  box-shadow: 0 0 10px black;
   /* box-shadow: 0 8px 6px -6px black; */
-  box-shadow: inset -3px -3px 10px darkslateblue;
+  /* box-shadow: inset -3px -3px 10px black; */
 }
 
 button {
@@ -23,6 +23,7 @@ img {
   height: 180px;
   width: 250px;
   margin: 40px;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 h1,
