@@ -1,3 +1,4 @@
+// "boiler plate" for  our node server
 // DEPENDENCIES / requires
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================

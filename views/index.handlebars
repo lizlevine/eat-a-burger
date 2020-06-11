@@ -55,6 +55,17 @@
 
                         </div>
                     </div>
+
+                    <li>
+                        {{name}}
+
+                        {{#if devour}}
+
+                        {{else}}
+                        <button class="eat" data-id="{{this.id}}" data-newdevoured="{{devour}}">Devour!</button>
+                        {{/if}}
+                    </li>
+
                 </div>
             </div>
         </div>

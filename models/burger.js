@@ -1,3 +1,4 @@
+
 // this file requires the orm (within config folder) which contains all methods
 // also,uses the orm w/in config folder(burgers_controller.js) in order to collect data from db & send
 // it to controllers folder (burgers_controller.js)

@@ -1,0 +1,13 @@
+<li class="burger-items">
+    <div class="animated pulse burger-name">
+        {{burger_name}}
+    </div>
+
+    <div class="burger-buttons">
+        <button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
+            {{#if devoured}}Eat it now!{{else}}Re-add to list{{/if}}
+        </button>
+
+        <button class="delete-burger" data-id="{{this.id}}">Remove</button>
+    </div>
+</li>
